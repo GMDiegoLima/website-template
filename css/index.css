@@ -1,0 +1,170 @@
+body {
+    font-family: "Noto Serif Oriya", serif;
+    font-size: 62.5%; /* 16*0.625 = 10px */
+    line-height: 0.9; /* distance between the lines */
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    min-width: 100%;
+    margin: 0;
+}
+
+h1 {margin: 0; line-height: 1.5;}
+p {line-height: 1.2;}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 100%;
+    margin: 0 auto;
+}
+
+.tab1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding-inline: 60px;
+    min-height: 100vh;
+    min-width: 100%;
+    font-size: 2rem;
+    color: white;
+    background-image: url('../images/bakery.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tab1 p {
+    margin-block: 15px;
+}
+
+.tab2 {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    gap: 40px;
+    font-size: 1rem;
+    margin: 0 auto;
+    margin-block: 100px;
+}
+
+.tab3 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-inline: 40px;
+    text-align: justify;
+    font-size: 1rem;
+}
+  
+.tab3-images {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.tab3-images img {
+    border-radius: 10px;
+}
+  
+.tab3-images:before {
+    content: "";
+    position: absolute;
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.image {
+    width: 48%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.tab4 {
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    min-width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-block: 60px;
+    color: white;
+    background-color: #201912;
+    z-index: 1;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding-block: 20px;
+    border-radius: 20px;
+    color: black;
+}
+
+.card-content{
+    padding-inline: 40px;
+}
+
+.card-content i {
+    color: #ffad31;
+}
+
+.card-image {
+    max-width: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.card:hover{
+    transform: translate(0px, -10px);
+}
+
+.media {
+    color: white;
+    background-color: black;
+    padding-block: 20px;
+    padding-inline: 20px;
+}
+
+.media-buttons i {
+    padding: 15px;
+    font-size: 0.8rem;
+    color: #ffad31;
+    border: white 1px solid;
+    border-radius: 50%;
+}
+
+button {
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    height: 40px;
+    width: 160px;
+    background-color: #000000;
+    padding-inline: 10px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #ff7b00;
+}
+
+@media (max-width: 750px) {
+    .hero{margin: 0 auto;}
+    .tab2 {display: grid;}
+    .tab3 {flex-direction: column;}
+    .tab4{flex-direction: column; align-items: center;}
+}

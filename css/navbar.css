@@ -1,0 +1,111 @@
+nav {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 62.5%; /* 16*0.625 = 10px */
+    line-height: 0.5; /* distance between the lines */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    color: white;
+    background-color: black;
+    z-index: 99;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.mobile-logo {
+    margin-left: 20px;
+}
+
+.hamburger {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+nav ul li i {
+    padding: 10px;
+    border: white 1px solid;
+    border-radius: 50%;
+    color: #ffad31;
+}
+
+nav ul li:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.logo {
+    color: rgb(255, 214, 29);
+    text-decoration: none;
+    list-style: none;
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 1;
+    margin-left: 20px;
+}
+
+.phone{
+    margin-right: 20px;
+}
+
+.media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.media-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+@media (max-width: 750px) {
+    nav ul{display: none !important;}
+    .mobile-menu {display: flex;}
+    .hamburger{margin-right: 20px;}
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        padding: 20px;
+        gap: 20px;
+    }
+}
