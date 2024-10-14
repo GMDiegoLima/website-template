@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    </head>
+    <nav>
+        <ul>
+            <li><a href="/" class="logo">LOGO</a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="phone"><a href="/contact"><i class="fa fa-phone text-primary"></i> Call us</a><br><a>+012 345 6789</a></li>
+        </ul>
+        <div class="mobile-menu">
+            <h1 class="logo">LOGO</h1>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <script>
+            function toggleMenu() {
+                const menu = document.querySelector('.menu');
+                menu.classList.toggle('active');
+            }
+        </script>
+    </nav>
+</html>
