@@ -7,7 +7,7 @@
         <ul>
             <li><a href="." class="logo">LOGO</a></li>
         </ul>
-        <ul class="menu">
+        <ul>
             <li><a href=".">Home</a></li>
             <li><a href=".">About</a></li>
             <li><a href=".">Services</a></li>
@@ -18,14 +18,23 @@
             <li class="phone"><a href="."><i class="fa fa-phone text-primary"></i> Call us</a><br><a>+012 345 6789</a></li>
         </ul>
         <div class="mobile-menu">
-            <h1 class="logo">LOGO</h1>
+            <ul>
+                <li><a href="." class="logo">LOGO</a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href=".">Home</a></li>
+                <li><a href=".">About</a></li>
+                <li><a href=".">Services</a></li>
+                <li><a href=".">Products</a></li>
+                <li><a href=".">Contact</a></li>
+             </ul>
             <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <script>
+                function toggleMenu() {
+                    const menu = document.querySelector('.menu');
+                    menu.classList.toggle('active');
+                }
+            </script>
         </div>
-        <script>
-            function toggleMenu() {
-                const menu = document.querySelector('.menu');
-                menu.classList.toggle('active');
-            }
-        </script>
     </nav>
 </html>

@@ -10,6 +10,7 @@ body {
 
 h1 {margin: 0; line-height: 1.5;}
 p {line-height: 1.2;}
+a {color: white; text-decoration: none;}
 
 .hero {
     display: flex;
@@ -104,11 +105,6 @@ p {line-height: 1.2;}
     color: white;
     background-color: #201912;
     z-index: 1;
-}
-
-a {
-    color: white;
-    text-decoration: none;
 }
 
 .card {

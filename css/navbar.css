@@ -14,29 +14,6 @@ nav {
     z-index: 99;
 }
 
-.mobile-menu {
-    display: none;
-    flex-direction: row;
-    min-width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-
-.mobile-logo {
-    margin-left: 20px;
-}
-
-.hamburger {
-    display: flex;
-    font-size: 30px;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-}
-
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -93,18 +70,44 @@ nav ul li:hover{
     gap: 20px;
 }
 
+.mobile-menu {
+    display: none;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.mobile-logo {
+    margin-left: 20px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+    position: absolute;
+    top: 50px; /* Abaixo do botão */
+    width: 100%;
+ }
+
+ .menu.active {
+    display: flex;
+ }
+
+.hamburger {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
 @media (max-width: 750px) {
     nav ul{display: none !important;}
     .mobile-menu {display: flex;}
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: black;
-        width: 100%;
-        padding: 20px;
-        gap: 20px;
-    }
 }
