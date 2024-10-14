@@ -154,13 +154,13 @@ button {
     font-size: 1.2rem;
     height: 40px;
     width: 160px;
-    background-color: #000000;
+    background-color: #ff7b00;
     padding-inline: 10px;
 }
 
 button:hover{
     cursor: pointer;
-    background-color: #ff7b00;
+    background-color: #000000;
 }
 
 @media (max-width: 750px) {
