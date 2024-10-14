@@ -15,7 +15,17 @@
   </head>
   <body>
     <div class="hero">
-      <%- include('navbar.html') %>
+      <div id="navbar"></div>
+      <script>
+        function loadNavbar() {
+            fetch('navbar.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('navbar').innerHTML = data;
+                });
+        }
+        window.onload = loadNavbar;
+      </script>
       <div class="tab1">
         <p style="color: gold; font-weight: 900;">// THE BEST BAKERY</p>
         <h1>WE BAKE WITH PASSION</h1>
@@ -54,8 +64,8 @@
       </div>
       <div class="tab3">
         <div class="tab3-images">
-          <img src="/images/about-1.jpg" class="image image-left" alt="Image 1">
-          <img src="/images/about-2.jpg" class="image image-right" alt="Image 2">
+          <img src="images/about-1.jpg" class="image image-left" alt="Image 1">
+          <img src="images/about-2.jpg" class="image image-right" alt="Image 2">
         </div>
         <div class="tab3-content">
           <h2 style="color: gold; font-weight: 900;">// About Us</h2>
