@@ -106,7 +106,7 @@ p {line-height: 1.2;}
     z-index: 1;
 }
 
-.tab4-column a {
+a {
     color: white;
     text-decoration: none;
 }
@@ -138,6 +138,9 @@ p {line-height: 1.2;}
 }
 
 .media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     color: white;
     background-color: black;
     padding-block: 20px;
