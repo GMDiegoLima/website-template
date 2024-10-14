@@ -96,7 +96,6 @@ nav ul li:hover{
 @media (max-width: 750px) {
     nav ul{display: none !important;}
     .mobile-menu {display: flex;}
-    .hamburger{margin-right: 20px;}
     .menu.active {
         display: flex;
         flex-direction: column;
