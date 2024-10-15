@@ -4,25 +4,29 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:type" content="website">
-    <meta name="description" content="Webiste description">
+    <meta name="description" content="Website description">
     <link rel="stylesheet" type="text/css" href="css/index.css"/>
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <title>Webiste Template</title>
+    <title>Website Template</title>
   </head>
   <body>
     <div class="hero">
       <div id="navbar"></div>
       <script>
+        function toggleMenu() {
+          const menu = document.querySelector('.menu-hamburger');
+          menu.classList.toggle('active');
+        }
+
         function loadNavbar() {
-            fetch('navbar.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('navbar').innerHTML = data;
-                });
+          fetch('navbar.html')
+              .then(response => response.text())
+              .then(data => {document.getElementById('navbar').innerHTML = data;});
         }
         window.onload = loadNavbar;
       </script>
@@ -30,7 +34,7 @@
         <p style="color: gold; font-weight: 900;">// THE BEST BAKERY</p>
         <h1>WE BAKE WITH PASSION</h1>
         <p>Bakery since 1990</p>
-        <button>Read more</button>
+        <button class="orange-button">Read more</button>
       </div>
       <div class="tab2">
         <div class="card">
@@ -71,7 +75,7 @@
           <h2 style="color: gold; font-weight: 900;">// About Us</h2>
           <h1>We Bake Every Item From The Core Of Our Hearts</h1>
           <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet<br><br>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-          <button>Read more</button>
+          <button class="orange-button">Read more</button>
         </div>
       </div>
       <div class="tab4">
@@ -80,14 +84,6 @@
           <h2><i class="fa fa-map-marker-alt me-3"></i> 123 Street, New York, USA</h2>
           <h2><i class="fa fa-phone-alt me-3"></i> +012 345 67890</h2>
           <h2><i class="fa fa-envelope me-3"></i> info@example.com</h2>
-        </div>
-        <div class="tab4-column">
-          <h1>Quick Links</h1>
-          <a href="."><h2>About Us</h2></a>
-          <a href="."><h2>Contact Us</h2></a>
-          <a href="."><h2>Our Services</h2></a>
-          <a href="."><h2>Terms & Conditions</h2></a>
-          <a href="."><h2>Support</h2></a>
         </div>
         <div class="tab4-column">
           <h1>Quick Links</h1>

@@ -14,9 +14,18 @@ nav {
     z-index: 99;
 }
 
-nav ul {
+.menu {
     display: flex;
     justify-content: space-between;
+    min-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
     flex-direction: row;
     list-style: none;
     padding: 0px;
@@ -79,35 +88,30 @@ nav ul li:hover{
     margin: 0 auto;
 }
 
-.mobile-logo {
-    margin-left: 20px;
-}
-
-.menu {
+.menu-hamburger {
     display: none;
     flex-direction: column;
-    gap: 20px;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     position: absolute;
-    top: 50px; /* Abaixo do botão */
-    width: 100%;
- }
+    top: 38px;
+    min-width: 100%;
+}
 
- .menu.active {
-    display: flex;
- }
+.menu-hamburger.active {display: flex;}
 
 .hamburger {
     display: flex;
     font-size: 30px;
     color: white;
+    background-color: black;
     border: none;
     cursor: pointer;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
 }
 
 @media (max-width: 750px) {
-    nav ul{display: none !important;}
+    .menu {display: none !important;}
+    nav ul {gap: 5px;}
     .mobile-menu {display: flex;}
 }

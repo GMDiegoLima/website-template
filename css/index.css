@@ -151,7 +151,7 @@ a {color: white; text-decoration: none;}
     border-radius: 50%;
 }
 
-button {
+.orange-button {
     color: white;
     border: none;
     border-radius: 12px;
@@ -162,7 +162,7 @@ button {
     padding-inline: 10px;
 }
 
-button:hover{
+.orange-button:hover{
     cursor: pointer;
     background-color: #000000;
 }
