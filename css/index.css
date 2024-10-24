@@ -142,12 +142,10 @@ a {color: white; text-decoration: none;}
     padding-inline: 20px;
 }
 
-.media-buttons i {
-    padding: 15px;
-    font-size: 0.8rem;
-    color: #ffad31;
-    border: white 1px solid;
-    border-radius: 50%;
+.media-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px !important;
 }
 
 .orange-button {
